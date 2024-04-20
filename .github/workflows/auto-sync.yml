@@ -15,9 +15,10 @@ jobs:
     - name: Mirror the Github repos to Gitee.
       uses: Yikun/hub-mirror-action@master
       with:
-        src: github/ShixiangWang
-        dst: gitee/ShixiangWang
+        src: github/yangtao521
+        dst: gitee/yangt9264
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
         mappings: ".github=>github"
         force_update: true
+        white_list:"MoviePilot-Plugins-jxxghp,MoviePilot-Plugins-thsrite"
