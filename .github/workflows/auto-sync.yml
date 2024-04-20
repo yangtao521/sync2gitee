@@ -21,4 +21,4 @@ jobs:
         dst_token: ${{ secrets.GITEE_TOKEN }}
         mappings: ".github=>github"
         force_update: true
-        white_list: "MoviePilot-Plugins-jxxghp,MoviePilot-Plugins-thsrite"
+        static_list: "MoviePilot-Plugins-jxxghp,MoviePilot-Plugins-thsrite,cloudflare-docker-proxy"
