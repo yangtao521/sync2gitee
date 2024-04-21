@@ -1,8 +1,12 @@
 on:
   push:
-  pull_request_target:
-    # delete this item if you don't want to trigger this workflow when modify this repo
-    branches: master
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
   schedule:
     # * is a special character in YAML so you have to quote this string
     # UTC 17:00 -> CST (China) 1:00, see https://datetime360.com/cn/utc-cst-china-time/
@@ -13,6 +17,8 @@ jobs:
     name: Sync-GitHub-to-Gitee
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout source codes
+      uses: actions/checkout@v1
     - name: Mirror the Github repos to Gitee.
       uses: Yikun/hub-mirror-action@master
       with:
