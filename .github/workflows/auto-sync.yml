@@ -29,4 +29,4 @@ jobs:
         dst_token: ${{ secrets.GITEE_TOKEN }}
         mappings: ".github=>github"
         force_update: true
-        static_list: "MoviePilot-Plugins-jxxghp,MoviePilot-Plugins-thsrite,MoviePilot-Frontend,MoviePilot,MoviePilot-Resources"
+        static_list: "MoviePilot-Plugins-jxxghp,MoviePilot-Plugins-thsrite"
