@@ -17,7 +17,8 @@ name: Mirror My GitHub Repos to Gitee
 jobs:
   run:
     name: Sync-GitHub-to-Gitee
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - name: Checkout source codes
       uses: actions/checkout@v1
