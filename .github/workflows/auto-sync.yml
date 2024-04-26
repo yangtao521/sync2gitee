@@ -1,8 +1,8 @@
 on:
-  #push:
-   # branches:
-   #   - main
-    #  - master
+  push:
+    branches:
+      - main
+      - master
   #pull_request:
    # branches:
      # - main
@@ -22,7 +22,7 @@ jobs:
     - name: Checkout source codes
       uses: actions/checkout@v1
     - name: Mirror the Github repos to Gitee.
-      uses: Yikun/hub-mirror-action@master
+      uses: Yikun/hub-mirror-action@v1.3
       with:
         src: github/yangtao521
         dst: gitee/yangt9264
