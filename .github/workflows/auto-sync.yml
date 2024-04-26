@@ -17,13 +17,12 @@ name: Mirror My GitHub Repos to Gitee
 jobs:
   run:
     name: Sync-GitHub-to-Gitee
-    #runs-on: ubuntu-latest
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout source codes
       uses: actions/checkout@v1
     - name: Mirror the Github repos to Gitee.
-      uses: Yikun/hub-mirror-action@v1.3
+      uses: Yikun/hub-mirror-action@master
       with:
         src: github/yangtao521
         dst: gitee/yangt9264
